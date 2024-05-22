@@ -10,13 +10,13 @@ public class Mensalista extends Empregado {
     }
     
     //Construtor
-    public Mensalista (String nome, String endereço, double salario, String cargo){
-        super(nome, endereço, salario);
+    public Mensalista (String nome, String endereço, String cargo){
+        super(nome, endereço);
         this.cargo = cargo;
     }
     public void calcularSalario (){
         if(cargo.equals ("Junior")){ //equals para comparar texto
-            salario = 2.500;
+            salario = 2500;
         }else if (cargo.equals ("Pleno")){
             salario = 3500;
         }else {
